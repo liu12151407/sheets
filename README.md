@@ -203,6 +203,7 @@ For the default info sheet use it as following:
 | content()       | Set content text.   |
 | drawable()      | Set drawable.       |
 | drawableColor() | Set drawable color. |
+| customView() | Use a custom view. |
 
 ## Options
 
@@ -287,6 +288,7 @@ For the default options sheet use it as following:
 | onPositiveMultiple()         | Set listener for multiple choices.                                                     |
 | displayButtons()             | Display buttons and require a positive button click for selection.                     |
 | displayMode()                | Display options in a list or a vertical/ horizontal growing scrollable grid.           |
+| preventIconTint()                | (Global) Prevents the lib to use a tint for the icons. Keeps the default colors of a drawable.           |
 
 **Option**
 
@@ -294,6 +296,7 @@ For the default options sheet use it as following:
 | ---------- | -------------------- |
 | selected() | Preselect an option. |
 | disable()  | Disable an option.   |
+| preventIconTint()                | (Local) Prevents the lib to use a tint for the icons. Keeps the default colors of a drawable.           |
 
 **Note**: Preselected options automatically increase the current selection while disabled options decrease the maximum amount of choices.
 
@@ -798,7 +801,7 @@ You can use the Lottie animation as a cover for any type of sheet.
 ## Appearance
 
 By default, the library switches to either day or night mode depending on the attr `textColorPrimary`.
-By default it uses the activity's colorPrimary. The default `highlightColor` is generated based on the color `sheetPrimaryColor`, or if not available `colorPrimary`.
+By default it uses the activity's colorPrimary. The default `highlightColor` is generated based on the color `sheetsPrimaryColor`, or if not available `colorPrimary`.
 
 ### Base
 
